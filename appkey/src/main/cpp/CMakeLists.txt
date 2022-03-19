@@ -18,6 +18,12 @@ add_library( # Sets the name of the library.
         key/WeChatKey.cpp
         key/XiaoMiKey.cpp
         key/HwKey.cpp
+        key/OppoKey.cpp
+        key/VivoKey.cpp
+        key/ShanYanKey.cpp
+        key/AliyunKey.cpp
+        key/JpushKey.cpp
+        key/UmengKey.cpp
         key/Keys.cpp
         key/KeyFactory.cpp
         com_github_yqyzxd_appkey_Keys.cpp

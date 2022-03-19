@@ -3,11 +3,23 @@ package com.github.yqyzxd.appkey
 
 object Keys {
     @JvmStatic
-    public var KEY_WECHAT="wechat"
+    var KEY_WECHAT="wechat"
     @JvmStatic
-    public var KEY_HW="hw"
+    var KEY_HW="hw"
     @JvmStatic
-    public var KEY_XIAOMI="xiaomi"
+    var KEY_XIAOMI="xiaomi"
+    @JvmStatic
+    var KEY_OPPO="oppo"
+    @JvmStatic
+    var KEY_ALIYUN="aliyun"
+    @JvmStatic
+    var KEY_VIVO="vivo"
+    @JvmStatic
+    var KEY_SHANYAN="shanyan"
+    @JvmStatic
+    var KEY_JPUSH="jpush"
+    @JvmStatic
+    var KEY_UMENG="umeng"
 
     private var mHandle:Long=0
     init {
@@ -17,12 +29,18 @@ object Keys {
         register(KEY_WECHAT)
         register(KEY_HW)
         register(KEY_XIAOMI)
+        register(KEY_OPPO)
+        register(KEY_ALIYUN)
+        register(KEY_VIVO)
+        register(KEY_SHANYAN)
+        register(KEY_JPUSH)
+        register(KEY_UMENG)
     }
 
-    fun register(key:String):Boolean{
+    private fun register(key:String):Boolean{
         return native_register(mHandle,key)
     }
-    fun unregister(key:String):Boolean{
+    private fun unregister(key:String):Boolean{
         return native_unregister(mHandle,key)
     }
 
